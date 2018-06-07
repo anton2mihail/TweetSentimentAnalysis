@@ -9,81 +9,41 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 Things you will need to start using the program 
-
-a 
-```
-tweets.txt
-```
-file containing the tweets
  
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
 ```
-Give the example
+Python3.6
+tweets.txt
+keywords.txt
 ```
-
-And repeat
-
+_You can go to www.python.org for instructions on installing the python3.6 interpreter._
+To check if you have python installed type into your command line
 ```
-until finished
+python
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
+and something like the following should appear
 ```
-Give an example
+Python 3.6.3 |Anaconda, Inc.| (default, Oct 15 2017, 03:27:45) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
 ```
+The _tweets_ file cotains space seperated information about the tweets, including the longitude and latitude coordinates, the date and time of the creation of the tweet, and the tweet text.<br/>
+The _keywords_ file contains the keywords the program should be looking for as well as their sentiment values. As these are completely arbitrary feel free to change them to your specifications.
+ 
+### Using
 
-### And coding style tests
+The best way to use the program is through IDLE or something like PyCharm but it can also be run from the command line
 
-Explain what these tests test and why
-
+Open your program of choice. Be it IDLE or simply using the <b>command line.</b>
+Type the following into your command line
 ```
-Give an example
+cd /The-Directory-where-the-file-is/TweetSentimentAnalysis
 ```
 
-## Deployment
+And then run the program with python, like so
 
-Add additional notes about how to deploy this on a live system
+```
+python sentimentAnalysis.py
+```
+and then the program will prompt you to enter the names of the two text files required (tweets.txt, keywords.txt).<br/>
+Afterwards the program will output the sentiment analysis by timezone, and there will appear a window in the background containing a graphical representaion of the sentiment analysis.
 
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
