@@ -44,6 +44,6 @@ And then run the program with python, like so
 ```
 python sentimentAnalysis.py
 ```
-and then the program will prompt you to enter the names of the two text files required (tweets.txt, keywords.txt).<br/>
+and then the program will prompt you to enter the names of the two text files required (keywords.txt, tweets.txt).<br/>
 Afterwards the program will output the sentiment analysis by timezone, and there will appear a window in the background containing a graphical representaion of the sentiment analysis.
 
